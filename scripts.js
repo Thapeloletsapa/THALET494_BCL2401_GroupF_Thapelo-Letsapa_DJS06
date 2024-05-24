@@ -65,3 +65,13 @@ console.log(namesContainingLetterS);
 console.log("Returns one boolean Value after using some() on the return")
 const namesContainsLetterS = namesContainingLetterS.some(Boolean);
 console.log(namesContainsLetterS);
+
+//PART 7 
+// Use reduce to transform the names array into an object mapping names to their respective provinces.
+const nameAndProvinceObject = names.reduce((object,name,index) =>{
+  object[name] = provinces[index];
+  return object;
+}, {});
+console.log(nameAndProvinceObject);
+
+//--------------------------------------------Advanced Exercises--------------------------------------------
