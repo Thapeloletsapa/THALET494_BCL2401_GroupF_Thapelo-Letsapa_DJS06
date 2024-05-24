@@ -13,3 +13,29 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+
+//PART 1
+// using forEach to log each name and each province to the console
+console.log("-----PROVINCES-----");
+provinces.forEach(province => console.log(province));
+console.log("-------NAMES-------");
+names.forEach(name => console.log(name));
+
+
+// console log name along with matching province
+console.log('---NAME (PROVINCE)---')
+names.forEach((name, index) => console.log(`${name} (${provinces[index]})`));
+
+//PART 2
+// using map to create a new array of province names in all uppercase
+// console log new array
+console.log("---UPPERCASE PROVINCES---");
+const upperCaseProvinces = provinces.map((province) => province.toUpperCase());
+console.log(upperCaseProvinces);
+
+// PART 3
+// Creating a new array using map that contains the length of each name.
+console.log("-----Lengths for each Name------")
+const nameLengths = names.map(name => `${name} (${name.length})`);
+console.log(nameLengths);
