@@ -98,3 +98,20 @@ console.log("-----Total price-----");
 console.log((products.filter((product) => 
  !(product.price === '' || product.price ===" "))).reduce((sum, product) => 
     sum + parseInt(product.price), 0));
+
+
+//PART 3
+// Filter out products without prices, convert string prices to numbers, and calculate the total price using reduce
+// REDUCE() The return value of the callback function is the accumulated result, 
+// and is provided as an argument in the next call to the callback function. 
+console.log("-----Total price-----");
+console.log((products.filter((product) => 
+ !(product.price === '' || product.price ===" "))).reduce((sum, product) => 
+    sum + parseInt(product.price), 0));
+
+//  PART 4
+//  Use reduce to concatenate all product names into a single string.
+console.log("----String with NO white spaces in between---");
+console.log(products.reduce((concatNames, product) => concatNames + product.product,''));
+console.log("----String with white spaces in between---");
+console.log(products.reduce((concatNames, product) => concatNames + product.product+' ',''));
