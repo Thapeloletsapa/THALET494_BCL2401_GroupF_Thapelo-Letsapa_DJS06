@@ -54,3 +54,14 @@ console.log("----Provinces without CAPE----")
 const provincesWithoutCape = provinces.filter( province =>!province.toLowerCase().includes("cape"));
 console.log(`Remaining provinces: ${provincesWithoutCape.length}`);
 console.log(provincesWithoutCape);
+
+//PART 6
+//Finding 'S': Create a boolean array using map and some to determine if a name contains the letter 'S'.
+console.log("-----Boolean of whether or not name contains S-----");
+//use map ()
+const namesContainingLetterS = names.map(name => name.toLowerCase().includes("s"));
+console.log(namesContainingLetterS);
+//use some() 
+console.log("Returns one boolean Value after using some() on the return")
+const namesContainsLetterS = namesContainingLetterS.some(Boolean);
+console.log(namesContainsLetterS);
