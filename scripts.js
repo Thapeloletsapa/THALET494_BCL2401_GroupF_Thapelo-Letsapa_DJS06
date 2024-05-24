@@ -88,3 +88,13 @@ products.map((productName) => console.log(productName.product));
 // FILTER() Returns the elements of an array that meet the condition specified in a callback function
 console.log("-----Products with names shorter than or equal to 5 characters-----");
 console.log(products.filter((product) => product.product.length <= 5));
+
+
+//PART 3
+// Filter out products without prices, convert string prices to numbers, and calculate the total price using reduce
+// REDUCE() The return value of the callback function is the accumulated result, 
+// and is provided as an argument in the next call to the callback function. 
+console.log("-----Total price-----");
+console.log((products.filter((product) => 
+ !(product.price === '' || product.price ===" "))).reduce((sum, product) => 
+    sum + parseInt(product.price), 0));
