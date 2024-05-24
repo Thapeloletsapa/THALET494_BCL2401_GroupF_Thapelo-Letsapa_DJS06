@@ -75,3 +75,16 @@ const nameAndProvinceObject = names.reduce((object,name,index) =>{
 console.log(nameAndProvinceObject);
 
 //--------------------------------------------Advanced Exercises--------------------------------------------
+
+
+//PART 1
+// Iterate over the products array, logging each product name.
+console.log("-----Product Names-----");
+products.map((productName) => console.log(productName.product));
+
+
+//PART 2
+//  Filter out products with names longer than 5 characters.
+// FILTER() Returns the elements of an array that meet the condition specified in a callback function
+console.log("-----Products with names shorter than or equal to 5 characters-----");
+console.log(products.filter((product) => product.product.length <= 5));
